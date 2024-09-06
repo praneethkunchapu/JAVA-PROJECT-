@@ -1,0 +1,671 @@
+import java.awt.*;
+import java.net.URI;
+import java.util.Scanner;
+
+class HelloWorld {
+    public static void mainexit2() throws Exception{
+        Scanner sc=new Scanner(System.in);
+        System.out.print("\n\nDo you like to exit: ");
+        String ext = sc.nextLine();
+        switch (ext){
+            case "yes": case "y": case "YES": case "Y":
+                System.out.print("\n\nWait, Exiting....\n\n");
+                intro();
+                break;
+            default:
+                System.exit(0);
+        }
+
+    }
+    public static void mainexit() throws Exception{
+        Scanner sc=new Scanner(System.in);
+        System.out.print("\n\nDo you like to exit: ");
+        String ext = sc.nextLine();
+        switch (ext){
+            case "yes": case "y": case "YES": case "Y":
+                System.out.print("\n\nWait, Exiting....");
+                System.exit(0);
+                break;
+            default:
+                intro();
+        }
+    }
+    public static void othrcou()throws Exception{
+        Scanner sc=new Scanner(System.in);
+        System.out.print("\nEnter the country name: ");
+        String other = sc.nextLine();
+        switch (other){
+            case "India": case "Canada": case "United States": case "Switzerland": case "USA": case "America":
+                System.out.print(""+other +""+", Is in our Data.");
+                System.out.print(" Press Enter\n\n");
+                String petc2 = sc.nextLine();
+                intro();
+            case "india": case "canada": case "united States": case "switzerland": case "america": case"usa":
+                System.out.print(""+other +""+", Is in our Data.");
+                System.out.print(" Press Enter\n");
+                String petc3 = sc.nextLine();
+                intro();
+            default:
+                System.out.print("We can't find "+other +" in our Data.");
+                String petc = sc.nextLine();
+                System.out.print("\nVisit 'HOLIDFY' website: ");
+                String tak = sc.nextLine();
+                switch (tak) {
+                    case "yes": case "y": case "YES": case "Y":
+                        Desktop d = Desktop.getDesktop();
+                        d.browse(new URI("https://www.holidify.com/collections/best-places-in-the-world?"));
+                        System.out.print("\npress enter to continue.\n\n");
+                        String petc22 = sc.nextLine();
+                        other();
+                        break;
+                    default:
+                        System.out.print("\n\nPress enter to continue.\n\n");
+                        String pet = sc.nextLine();
+                        other();
+                }
+        }
+
+    }
+
+    public static void cnfmor()throws Exception
+    {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("\n\n\t\t\tOrder Conformed.");
+        String qew = sc.nextLine();
+        System.out.print("\nWe Will Inform, When Your Order Is Near To You.");
+        String qew21 = sc.nextLine();
+        System.out.print("\n\t\t Thank you, Visit Again\n\n");
+        String petc = sc.nextLine();
+        intro22();
+    }
+    public static void cnfrm()throws Exception
+    {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("\n\nLike to cancel the order: \n");
+        String cncl = sc.nextLine();
+        switch(cncl){
+            case "yes": case "y": case "YES": case "Y":
+                intro22();
+                break;
+            default:
+                returns();
+        }
+    }
+    public static void returns()throws Exception {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("\n\nPress '1' to conform:\n");
+        System.out.print("-\n");
+        int re = sc.nextInt();
+        System.out.print("-\n");
+        if (re == 1) {
+            cnfmor();
+        } else {
+            cnfrm();
+        }
+    }
+
+    public static void nonvegamount()throws Exception {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("\nSelect:\n");
+        System.out.print("-\n");
+        int src = sc.nextInt();
+        System.out.print("-\n");
+        if (src == 1) {
+            System.out.print("\nEnter no.of.Orders:\n");
+            System.out.print("-\n");
+            int sr = sc.nextInt();
+            System.out.print("-\n");
+            System.out.print("\n");
+            System.out.print("Your Order:\n");
+            System.out.print("\t\t\tOrder Iteam     : Paneer Butter Masala\n");
+            System.out.print("\t\t\tNo.of.orders    : " + sr+ "\n");
+            System.out.print("\t\t\tTotal Rupees    : " + sr * 243);
+            System.out.print("\n");
+            returns();
+        } else if (src == 2) {
+            System.out.print("\nEnter no.of.Orders:\n");
+            System.out.print("-\n");
+            int sr = sc.nextInt();
+            System.out.print("-\n");
+            System.out.print("\n");
+            System.out.print("Your Order:\n");
+            System.out.print("\t\t\tOrder Iteam     : Kadhai Paneer\n");
+            System.out.print("\t\t\tNo.of.orders    : " + sr+ "\n");
+            System.out.print("\t\t\tTotal Rupees    : " + sr * 175);
+            System.out.print("\n");
+            returns();
+        } else if (src == 3) {
+            System.out.print("\nEnter no.of.Orders:\n");
+            System.out.print("-\n");
+            int sr = sc.nextInt();
+            System.out.print("-\n");
+            System.out.print("\n");
+            System.out.print("Your Order:\n");
+            System.out.print("\t\t\tOrder Iteam     : Dal Tadka\n");
+            System.out.print("\t\t\tNo.of.orders    : " + sr+ "\n");
+            System.out.print("\t\t\tTotal Rupees    : " + sr * 220);
+            System.out.print("\n");
+            returns();
+        } else if (src == 4) {
+            System.out.print("\nEnter no.of.Orders:\n");
+            System.out.print("-\n");
+            int sr = sc.nextInt();
+            System.out.print("-\n");
+            System.out.print("\n");
+            System.out.print("Your Order:\n");
+            System.out.print("\t\t\tOrder Iteam     : Jeera Rice\n");
+            System.out.print("\t\t\tNo.of.orders    : " + sr+ "\n");
+            System.out.print("\t\t\tTotal Rupees    : " + sr * 120);
+            System.out.print("\n");
+            returns();
+        } else if (src == 5) {
+            System.out.print("\nEnter no.of.Orders:\n");
+            System.out.print("-\n");
+            int sr = sc.nextInt();
+            System.out.print("-\n");
+            System.out.print("\n");
+            System.out.print("Your Order:\n");
+            System.out.print("\t\t\tOrder Iteam     : Masala Rice\n");
+            System.out.print("\t\t\tNo.of.orders    : " + sr+ "\n");
+            System.out.print("\t\t\tTotal Rupees    : " + sr * 220);
+            System.out.print("\n");
+            returns();
+        } else if (src == 6) {
+            System.out.print("\nEnter no.of.Orders:\n");
+            System.out.print("-\n");
+            int sr = sc.nextInt();
+            System.out.print("-\n");
+            System.out.print("\n");
+            System.out.print("Your Order:\n");
+            System.out.print("\t\t\tOrder Iteam     : Patodi Rassa\n");
+            System.out.print("\t\t\tNo.of.orders    : " + sr+ "\n");
+            System.out.print("\t\t\tTotal Rupees    : " + sr * 345);
+            System.out.print("\n");
+            returns();
+        } else if (src == 7) {
+            intro22();
+        } else {
+            System.out.print("\nSomething Went Wrong\n");
+        }
+    }
+
+    public static void vegamount() throws Exception{
+        Scanner sc = new Scanner(System.in);
+        System.out.print("\nSelect:\n");
+        System.out.print("-\n");
+        int src = sc.nextInt();
+        System.out.print("-\n");
+        if (src == 1) {
+            System.out.print("\nEnter no.of.Orders:\n");
+            System.out.print("-\n");
+            int sr = sc.nextInt();
+            System.out.print("-\n");
+            System.out.print("\n");
+            System.out.print("Your Order:\n");
+            System.out.print("\t\t\tOrder Iteam     : Chicken Handi\n");
+            System.out.print("\t\t\tNo.of.orders    : " + sr+ "\n");
+            System.out.print("\t\t\tTotal Rupees    : " + sr * 215);
+            System.out.print("\n");
+            returns();
+        } else if (src == 2) {
+            System.out.print("\nEnter no.of.Orders:\n");
+            System.out.print("-\n");
+            int sr = sc.nextInt();
+            System.out.print("-\n");
+            System.out.print("\n");
+            System.out.print("Your Order:\n");
+            System.out.print("\t\t\tOrder Iteam     : Chicken Biryani\n");
+            System.out.print("\t\t\tNo.of.orders    : " + sr+ "\n");
+            System.out.print("\t\t\tTotal Rupees    : " + sr * 170);
+            System.out.print("\n");
+            returns();
+        } else if (src == 3) {
+            System.out.print("\nEnter no.of.Orders:\n");
+            System.out.print("-\n");
+            int sr = sc.nextInt();
+            System.out.print("-\n");
+            System.out.print("\n");
+            System.out.print("Your Order:\n");
+            System.out.print("\t\t\tOrder Iteam     : Chicken Masala with Gravy\n");
+            System.out.print("\t\t\tNo.of.orders    : " + sr+ "\n");
+            System.out.print("\t\t\tTotal Rupees    : " + sr * 220);
+            System.out.print("\n");
+            returns();
+        } else if (src == 4) {
+            System.out.print("\nEnter no.of.Orders:\n");
+            System.out.print("-\n");
+            int sr = sc.nextInt();
+            System.out.print("-\n");
+            System.out.print("\n");
+            System.out.print("Your Order:\n");
+            System.out.print("\t\t\tOrder Iteam     : Chicken Masala Dry\n");
+            System.out.print("\t\t\tNo.of.orders    : " + sr+ "\n");
+            System.out.print("\t\t\tTotal Rupees    : " + sr * 240);
+            System.out.print("\n");
+            returns();
+        } else if (src == 5) {
+            System.out.print("\nEnter no.of.Orders:\n");
+            System.out.print("-\n");
+            int sr = sc.nextInt();
+            System.out.print("-\n");
+            System.out.print("\n");
+            System.out.print("Your Order:\n");
+            System.out.print("\t\t\tOrder Iteam     : Chicken Tandoori Roasted\n");
+            System.out.print("\t\t\tNo.of.orders    : " + sr+ "\n");
+            System.out.print("\t\t\tTotal Rupees    : " + sr * 220);
+            System.out.print("\n");
+            returns();
+        } else if (src == 6) {
+            System.out.print("\nEnter no.of.Orders:\n");
+            System.out.print("-\n");
+            int sr = sc.nextInt();
+            System.out.print("-\n");
+            System.out.print("\n");
+            System.out.print("Your Order:\n");
+            System.out.print("\t\t\tOrder Iteam     : Mutton Handi\n");
+            System.out.print("\t\t\tNo.of.orders    : " + sr+ "\n");
+            System.out.print("\t\t\tTotal Rupees    : " + sr * 315);
+            System.out.print("\n");
+            returns();
+        } else if (src == 7) {
+            intro22();
+        } else {
+            System.out.print("\nSomething Went Wrong\n");
+        }
+    }
+
+    public static void non_veg()throws Exception{
+        System.out.print("\nNON_VEG MENU\n");
+        System.out.print("\n  1.Chicken Handi             (Rs/-215)\n");
+        System.out.print("  2.Chicken Biryani           (Rs/-170)\n");
+        System.out.print("  3.Chicken Masala with Gravy (Rs/-220)\n");
+        System.out.print("  4.Chicken Masala Dry        (Rs/-240)\n");
+        System.out.print("  5.Chicken Tandoori Roasted  (Rs/-220)\n");
+        System.out.print("  6.Mutton Handi              (Rs/-315)\n");
+        System.out.print("  7.Back\n");
+        vegamount();
+    }
+
+    public static void veg()throws Exception {
+        System.out.print("\nVEG MENU\n");
+        System.out.print("\n  1.Paneer Butter Masala      (Rs/-243)\n");
+        System.out.print("  2.Kadhai Paneer             (Rs/-175)\n");
+        System.out.print("  3.Dal Tadka                 (Rs/-220)\n");
+        System.out.print("  4.Jeera Rice                (Rs/-120)\n");
+        System.out.print("  5.Masala Rice               (Rs/-220)\n");
+        System.out.print("  6.Patodi Rassa              (Rs/-345)\n");
+        System.out.print("  7.Back\n");
+        nonvegamount();
+    }
+
+    public static void intro22()throws Exception{
+        Scanner sc = new Scanner(System.in);
+        System.out.print("\n\t\t\t  Welcome Back");
+        System.out.print("\n\nFood type: ");
+        System.out.print("\n\t\t 1.Veg");
+        System.out.print("\n\t\t 2.Non-Veg");
+        System.out.print("\n\t\t 3.Exit");
+        System.out.print("\n\nSelect:\n");
+        System.out.print("-\n");
+        int se = sc.nextInt();
+        System.out.print("-\n");
+        switch (se) {
+            case 1:
+                veg();
+                break;
+            case 2:
+                non_veg();
+                break;
+            default:
+                mainexit2();
+        }
+
+    }
+
+
+    public static void brthdy()throws Exception
+    {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("\n\nNOTE: Enter 'use' to use my current location.\n");
+        System.out.print("Location:");
+        String adrs= sc.nextLine();
+        switch (adrs)
+        {
+            case "use":
+                System.out.print("\nPress enter to continue.");
+                String petc=sc.nextLine();
+                String petc1=sc.nextLine();
+                intro22();
+            default:
+                System.out.println("\nCity / village: ");
+                String brt1 = sc.nextLine();
+                System.out.println("\nMandal:");
+                String brt2 = sc.nextLine();
+                System.out.println("\nDoor no:");
+                String brt3 = sc.nextLine();
+                System.out.println("\nVerify..!");
+                System.out.println("\t\t"+brt1 +"\t\t\n" +brt2+"\t\t\n"+brt3);
+                System.out.print("\nCorrect\n");
+                String num=sc.nextLine();
+                switch (num)
+                {
+                    case "yes": case "y": case "YES": case "Y":
+                    cnfmor();
+                    break;
+                    default:
+                        cnfmor();
+                        break;
+                }
+
+        }
+    }
+
+
+    public static void brthdy1()throws Exception
+    {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("\nUsername\n");
+        System.out.print("-----------\n");
+        String usrnm = sc.nextLine();
+        System.out.print("-----------\n");
+        System.out.print("Press enter to continue");
+        String petc= sc.nextLine();
+        brthdy();
+    }
+
+    public static void introduction2()throws Exception{
+        Scanner sc = new Scanner(System.in);
+        System.out.print("\nGive Deliver Details\n");
+        System.out.print("\n\nPhone Number\n");
+        System.out.print("-------------\n");
+        System.out.print("+91");
+        String phnum = sc.nextLine();
+        System.out.print("-------------\n");
+        String name = phnum;
+        int length = name.length();
+        if(length == 10){
+            brthdy1();
+        }
+        else{
+            System.out.print("\nInvalid Phone Number.");
+            introduction2();
+        }
+    }
+
+    public static void other()throws Exception {
+        Scanner sc=new Scanner(System.in);
+        System.out.print("\n");
+        System.out.print("1.Food order");
+        System.out.print("\t2.Other country   ");
+        System.out.print("\t3.Back");
+        System.out.print("\n\nSelect:\n");
+        System.out.print("-\n");
+        int sel = sc.nextInt();
+        System.out.print("-\n");
+        switch (sel)
+        {
+            case 1:
+                introduction2();
+                break;
+            case 2:
+                othrcou();
+                break;
+            default:
+                intro();
+        }
+    }
+
+
+    public static void swzrlnd()throws Exception{
+        Scanner sc=new Scanner(System.in);
+        Desktop d =  Desktop.getDesktop();
+        System.out.print("\nSWITZERLAND");
+        System.out.print("\n\t\t  1.Places\n");
+        System.out.print("\t\t  2.Food\n");
+        System.out.print("\t\t  3.Back\n");
+        System.out.print("Select:\n");
+        System.out.print("-\n");
+        int swe = sc.nextInt();
+        System.out.print("-\n");
+        if(swe==1){
+            System.out.print("TOP 5 PLACES IN SWITZERLAND\n");
+            d.browse(new URI("file:///D:/web%20try%202/Switzerland.places.html"));
+            System.out.print("\nPress enter to continue\n");
+            String petc= sc.nextLine();
+            String petc2= sc.nextLine();
+            swzrlnd();
+        }
+        else if(swe==2){
+            System.out.print("TOP 5 FOOD ITEMS IN SWITZERLAND\n");
+            d.browse(new URI("file:///D:/web%20try%202/Switzerland.food.html"));
+            System.out.print("\nPress enter to continue\n");
+            String petc= sc.nextLine();
+            String petc2= sc.nextLine();
+            swzrlnd();
+        }
+        else if (swe==3) {
+            intro();
+        }
+        else{
+            System.out.print("\nSomething went wrong.\n");
+            swzrlnd();
+        }
+    }
+    public static void  swzexit()throws Exception{
+        Scanner sc = new Scanner(System.in);
+        System.out.print("\nPress enter to continue");
+        String petc= sc.nextLine();
+        System.out.print("\n\nLike to Return back:\n");
+        System.out.print("|->");
+        String exit = sc.nextLine();
+        switch (exit){
+            case "yes": case "y": case "YES": case "Y":
+                System.out.print("Loading.....\n\n");
+                intro();
+            default:
+                System.out.print("Loading.....\n\n");
+                swzrlnd();
+        }
+    }
+
+    public static void untdsts()throws Exception{
+        Scanner sc=new Scanner(System.in);
+        Desktop d =  Desktop.getDesktop();
+        System.out.print("\nUNITED STATES");
+        System.out.print("\n\t\t   1.Places\n");
+        System.out.print("\t\t   2.Food\n");
+        System.out.print("\t\t   3.Back\n");
+        System.out.print("Select:\n");
+        System.out.print("-\n");
+        int swe = sc.nextInt();
+        System.out.print("-\n");
+        if(swe==1){
+            System.out.print("TOP 5 PLACES IN UNITED STATES\n");
+            d.browse(new URI("file:///D:/web%20try%202/usa.places.html"));
+            System.out.print("\nPress enter to continue\n");
+            String petc= sc.nextLine();
+            String petc2= sc.nextLine();
+            untdsts();
+        }
+        else if(swe==2){
+            System.out.print("TOP 5 FOOD ITEMS IN UNITED STATES\n");
+            d.browse(new URI("file:///D:/web%20try%202/usa.food.html"));
+            System.out.print("\nPress enter to continue\n");
+            String petc= sc.nextLine();
+            String petc2= sc.nextLine();
+            untdsts();
+        }
+        else if (swe==3) {
+            intro();
+        }
+        else{
+            System.out.print("\nSomething went wrong.\n");
+            untdsts();
+        }
+    }
+    public static void  untdtsexit()throws Exception{
+        Scanner sc = new Scanner(System.in);
+        System.out.print("\nPress enter to continue");
+        String petc= sc.nextLine();
+        System.out.print("\n\nLike to Return back:\n");
+        System.out.print("|->");
+        String exit = sc.nextLine();
+        switch (exit){
+            case "yes": case "y": case "YES": case "Y":
+                System.out.print("Loading.....\n\n");
+                intro();
+            default:
+                System.out.print("Loading.....\n\n");
+                untdsts();
+        }
+    }
+
+
+    public static void canada()throws Exception{
+        Scanner sc=new Scanner(System.in);
+        Desktop d =  Desktop.getDesktop();
+        System.out.print("\nCANADA");
+        System.out.print("\n\t\t1.Places\n");
+        System.out.print("\t\t2.Food\n");
+        System.out.print("\t\t3.Back\n");
+        System.out.print("Select:\n");
+        System.out.print("-\n");
+        int swe = sc.nextInt();
+        System.out.print("-\n");
+        if(swe==1){
+            System.out.print("TOP 5 PLACES IN CANADA\n");
+            d.browse(new URI("file:///D:/web%20try%202/canada.places.html"));
+            System.out.print("\nPress enter to continue\n");
+            String petc= sc.nextLine();
+            String petc2= sc.nextLine();
+            canada();
+        }
+        else if(swe==2){
+            System.out.print("TOP 5 FOOD ITEMS IN CANADA\n");
+            d.browse(new URI("file:///D:/web%20try%202/canada.food.html"));
+            System.out.print("\nPress enter to continue\n");
+            String petc= sc.nextLine();
+            String petc2= sc.nextLine();
+            canada();
+        }
+        else if (swe==3) {
+            intro();
+        }
+        else{
+            System.out.print("\nSomething went wrong.\n");
+            canada();
+        }
+    }
+    public static void  cndaexit()throws Exception{
+        Scanner sc = new Scanner(System.in);
+        System.out.print("\nPress enter to continue");
+        String petc= sc.nextLine();
+        System.out.print("\n\nLike to Return back:\n");
+        System.out.print("|->");
+        String exit = sc.nextLine();
+        switch (exit){
+            case "yes": case "y": case "YES": case "Y":
+                System.out.print("Loading.....\n\n");
+                intro();
+            default:
+                System.out.print("Loading.....\n\n");
+                canada();
+        }
+    }
+
+
+    public static void india()throws Exception{
+        Desktop d =  Desktop.getDesktop();
+        Scanner sc=new Scanner(System.in);
+        System.out.print("\nINDIAN");
+        System.out.print("\n\t\t1.Places\n");
+        System.out.print("\t\t2.Food\n");
+        System.out.print("\t\t3.Back\n");
+        System.out.print("Select:\n");
+        System.out.print("-\n");
+        int swe = sc.nextInt();
+        System.out.print("-\n");
+        if(swe==1){
+            System.out.print("TOP 5 PLACES IN INDIA\n");
+            d.browse(new URI("file:///D:/web%20try%202/india.places.html"));
+            System.out.print("\nPress enter to continue\n");
+            String petc= sc.nextLine();
+            String petc2= sc.nextLine();
+            india();
+        }
+        else if(swe==2){
+            System.out.print("TOP 5 FOOD ITEMS IN INDIA\n");
+            d.browse(new URI("file:///D:/web%20try%202/india.food.html"));
+            System.out.print("\nPress enter to continue\n");
+            String petc= sc.nextLine();
+            String petc2= sc.nextLine();
+            india();
+        }
+        else if (swe==3) {
+            intro();
+        }
+        else{
+            System.out.print("\nSomething went wrong.\n");
+            india();
+        }
+    }
+    public static void  indexit()throws Exception{
+        Scanner sc = new Scanner(System.in);
+        System.out.print("\n\nLike to Return back:\n");
+        System.out.print("|->");
+        String exit = sc.nextLine();
+        switch (exit){
+            case "yes": case "y": case "YES": case "Y":
+                System.out.print("Loading.....\n\n");
+                intro();
+            default:
+                System.out.print("Loading.....\n\n");
+                india();
+        }
+    }
+
+    public static void intro()throws Exception{
+        Scanner sc= new Scanner(System.in);
+        System.out.print("\n\nCountry\n");
+        System.out.print("\t1.India\n");
+        System.out.print("\t2.Canada\n");
+        System.out.print("\t3.United States\n");
+        System.out.print("\t4.Switzerland\n");
+        System.out.print("\t5.Other\n");
+        System.out.print("\t6.Exit\n");
+        System.out.print("\nSelect:\n");
+        System.out.print("-\n");
+        int sqw = sc.nextInt();
+        System.out.print("-\n");
+        switch (sqw){
+            case 1:
+                india();
+                break;
+            case 2:
+                canada();
+                break;
+            case 3:
+                untdsts();
+                break;
+            case 4:
+                swzrlnd();
+                break;
+            case 5:
+                other();
+                break;
+            case 6:
+                mainexit();
+                break;
+            default:
+                intro();
+        }
+    }
+
+    public static void main( String args[])throws Exception{
+        Scanner sc= new Scanner(System.in);
+        System.out.print("\n\t    Welcome");
+        System.out.print("\n\nPress enter to continue.\n");
+        String petc = sc.nextLine();
+        intro();
+    }
+}
